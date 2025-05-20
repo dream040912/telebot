@@ -4,7 +4,7 @@ from tables import Games, Ads
 def get_games():
     list_game = []
     for games in Games:
-        list_game.append(f"{games.name_game} | {games.price_game}")
+        list_game.append(f"{games.name_game} | {games.price_game} | {games.sells_price} | {games.link}")
 
     return list_game
 

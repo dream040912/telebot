@@ -7,8 +7,8 @@ db = SqliteDatabase("analiz.db")
 
 class Games(Model):
     name_game = CharField(unique=True)
-    price_game = FloatField()
-    sells = FloatField(null=True)
+    price_game = CharField()
+    sells = CharField(null=True)
     sells_price = FloatField(null=True)
     link = CharField(unique=True)
 
