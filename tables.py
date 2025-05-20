@@ -4,6 +4,7 @@ db = SqliteDatabase("analiz.db")
 
 
 class Games(Model):
+    DoesNotExist = None
     name_game = CharField(unique=True)
     price_game = FloatField()
 
@@ -21,3 +22,4 @@ class Ads(Model):
         database = db
 
 Ads.create_table()
+

@@ -26,3 +26,6 @@ def lissen(message):
         bot.send_message(message.chat.id, s)
 
 
+@bot.message_handler(commands=["steam_discount"])
+def discount(message):
+    bot.send_message(message.chat.id, )
